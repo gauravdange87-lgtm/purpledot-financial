@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Make Your Mortgage Tax-Deductible & Pay It Off Faster | Purple Dot Financial</title>
+<meta name="description" content="Canadian homeowners: use the Smith Manoeuvre, cash damming, and all-in-one readvanceable mortgages to make your mortgage interest tax-deductible and pay off your home years sooner. Free, no-obligation review.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ===================== META PIXEL (replace PIXEL_ID) ===================== -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','PIXEL_ID');           // ← replace PIXEL_ID with your Meta Pixel ID
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+<!-- ======================================================================== -->
+
+<style>
+  :root{
+    --bg:#0a0a0a; --bg2:#0d0d0d; --bg3:#080808;
+    --p400:#b06ecf; --p500:#9B4DCA; --p600:#7B2D8B; --p700:#5f1f6d; --p900:#2d0d40;
+    --line:#1a1a1a; --line2:#1e1e1e;
+    --g300:#d1d5db; --g400:#9ca3af; --g500:#6b7280; --g600:#4b5563;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:#fff;font-family:'Montserrat',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#111}::-webkit-scrollbar-thumb{background:var(--p600);border-radius:3px}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+  .grad{background:linear-gradient(135deg,#9B4DCA 0%,#7B2D8B 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .bg-grid{background-image:linear-gradient(rgba(123,45,139,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(123,45,139,.07) 1px,transparent 1px);background-size:60px 60px}
+  .eyebrow{color:var(--p500);font-size:12px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;margin-bottom:16px}
+  h1,h2,h3{line-height:1.05;letter-spacing:-.01em}
+  .glow{box-shadow:0 0 40px rgba(123,45,139,.4),0 0 80px rgba(123,45,139,.15)}
+  @keyframes pulseGlow{0%,100%{box-shadow:0 0 20px rgba(123,45,139,.3)}50%{box-shadow:0 0 40px rgba(123,45,139,.7)}}
+  .pulse-glow{animation:pulseGlow 3s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .dotpulse{animation:pulse 2s ease-in-out infinite}
+  @keyframes bounce{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;font-size:16px;
+    padding:15px 30px;border-radius:12px;cursor:pointer;border:none;transition:all .2s;font-family:inherit}
+  .btn-p{background:var(--p600);color:#fff}
+  .btn-p:hover{background:var(--p500)}
+  .btn-o{background:transparent;color:#fff;border:1px solid #374151}
+  .btn-o:hover{border-color:rgba(155,77,202,.6);background:rgba(255,255,255,.05)}
+  .btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+
+  /* Navbar */
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:all .3s}
+  nav.scrolled{background:rgba(10,10,10,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line2)}
+  .navin{max-width:1200px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo .wm{display:flex;flex-direction:column;line-height:1}
+  .logo .wm b{font-size:15px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+  .logo .wm span{font-size:8.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+  .navlinks{display:none;align-items:center;gap:32px}
+  .navlinks a{color:var(--g400);font-size:14px;font-weight:500;transition:color .2s}
+  .navlinks a:hover{color:#fff}
+  .navcta{display:none;align-items:center;gap:18px}
+  .navcta .tel{color:var(--g400);font-size:14px;font-weight:600}.navcta .tel:hover{color:#fff}
+  .navcta .btn{padding:11px 22px;font-size:14px}
+  @media(min-width:900px){.navlinks,.navcta{display:flex}}
+
+  /* Hero */
+  .hero{position:relative;min-height:100vh;display:flex;flex-direction:column;justify-content:center;overflow:hidden}
+  .glow-a{position:absolute;top:0;right:0;width:700px;height:700px;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle,rgba(123,45,139,.18) 0%,transparent 70%);transform:translate(20%,-20%)}
+  .glow-b{position:absolute;bottom:0;left:0;width:500px;height:500px;border-radius:50%;pointer-events:none;
+    background:radial-gradient(circle,rgba(123,45,139,.1) 0%,transparent 70%);transform:translate(-30%,30%)}
+  .hero .inner{position:relative;max-width:1200px;margin:0 auto;padding:130px 24px 80px;width:100%}
+  .badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(123,45,139,.4);border-radius:999px;padding:7px 16px;margin-bottom:28px}
+  .badge .d{width:8px;height:8px;border-radius:50%;background:var(--p500)}
+  .badge span{color:var(--p400);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+  .hero h1{font-size:clamp(42px,9vw,104px);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;margin-bottom:6px}
+  .cyc{margin:20px 0 24px;min-height:56px;display:flex;align-items:center;flex-wrap:wrap}
+  .cyc p{font-size:clamp(20px,3.6vw,38px);font-weight:800;color:var(--g500);text-transform:uppercase;letter-spacing:-.01em}
+  .cyc .word{display:inline-block;transition:all .3s}
+  .hero .sub{color:var(--g400);font-size:clamp(16px,2vw,20px);max-width:640px;margin-bottom:36px;line-height:1.6}
+  .hero .sub b{color:#fff;font-weight:700}
+  .hero-cta{display:flex;flex-direction:column;gap:14px}
+  @media(min-width:560px){.hero-cta{flex-direction:row}}
+  .hero .btn{font-size:17px;padding:17px 34px}
+  .scroll-ind{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;animation:bounce 2s infinite}
+  .scroll-ind span{color:var(--g600);font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+
+  /* Stats */
+  .stats{border-top:1px solid var(--line);margin-top:64px;padding-top:40px;display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+  @media(min-width:768px){.stats{grid-template-columns:repeat(4,1fr)}}
+  .stat b{display:block;font-size:clamp(30px,5vw,46px);font-weight:900;letter-spacing:-.02em;line-height:1}
+  .stat span{color:var(--g500);font-size:13px;font-weight:600;margin-top:8px;display:block;text-transform:uppercase;letter-spacing:.04em}
+
+  /* Sections */
+  section{position:relative}
+  .sec{padding:clamp(64px,10vw,112px) 0}
+  .sec-2{background:var(--bg2)}
+  h2.big{font-size:clamp(32px,6vw,68px);font-weight:900;text-transform:uppercase;line-height:1.02;letter-spacing:-.02em}
+  .lead{color:var(--g400);font-size:18px;line-height:1.7;max-width:620px}
+
+  /* Why grid */
+  .why{display:grid;grid-template-columns:1fr;gap:56px;align-items:start}
+  @media(min-width:960px){.why{grid-template-columns:1fr 1fr;gap:64px}}
+  .why-left .quote{border-left:2px solid var(--p600);padding-left:24px;margin-top:32px}
+  .why-left .quote p{color:#fff;font-weight:600;font-size:18px;font-style:italic;line-height:1.5}
+  .why-left .quote span{color:var(--g500);font-size:13px;font-weight:600;margin-top:12px;display:block}
+  .reasons{display:flex;flex-direction:column;gap:34px}
+  .reason{display:flex;gap:24px}
+  .reason .n{font-size:52px;font-weight:900;color:#1e1e1e;line-height:.9;flex-shrink:0;transition:color .3s}
+  .reason:hover .n{color:rgba(123,45,139,.35)}
+  .reason h3{font-size:20px;font-weight:800;margin-bottom:8px}
+  .reason p{color:var(--g400);line-height:1.65;font-size:15px}
+
+  /* Strategy cards */
+  .cards{display:grid;grid-template-columns:1fr;gap:24px;margin-top:56px}
+  @media(min-width:880px){.cards{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--bg);border:1px solid var(--line2);border-radius:18px;padding:32px;transition:all .25s;position:relative;overflow:hidden}
+  .card:hover{border-color:rgba(123,45,139,.45);transform:translateY(-4px)}
+  .card .num{font-size:13px;font-weight:900;color:var(--p500);letter-spacing:.2em;margin-bottom:18px}
+  .card .ico{font-size:34px;margin-bottom:14px}
+  .card h3{font-size:21px;font-weight:800;text-transform:uppercase;margin-bottom:10px;letter-spacing:-.01em}
+  .card p{color:var(--g400);font-size:15px;line-height:1.65}
+  .card .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .card .tags span{font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--p400);border:1px solid rgba(123,45,139,.3);border-radius:999px;padding:5px 11px}
+
+  /* Calculator */
+  .calc{background:var(--bg);border:1px solid var(--line2);border-radius:22px;padding:clamp(24px,4vw,44px);margin-top:48px}
+  .calc-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:center}
+  @media(min-width:860px){.calc-grid{grid-template-columns:1fr 1fr}}
+  .field{margin-bottom:26px}
+  .field label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.05em;color:var(--g300);margin-bottom:12px}
+  .field label b{font-size:19px;font-weight:900;letter-spacing:0;text-transform:none}
+  input[type=range]{width:100%;height:5px;-webkit-appearance:none;appearance:none;background:#26202b;border-radius:999px;outline:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--p500);cursor:pointer;box-shadow:0 0 16px rgba(155,77,202,.7)}
+  input[type=range]::-moz-range-thumb{width:24px;height:24px;border:none;border-radius:50%;background:var(--p500);cursor:pointer}
+  .note{color:var(--g600);font-size:12px;line-height:1.55;margin-top:6px}
+  .calc-res{background:linear-gradient(160deg,rgba(123,45,139,.14),rgba(10,10,10,0));border:1px solid rgba(123,45,139,.35);border-radius:18px;padding:34px;text-align:center}
+  .calc-res .big{font-size:clamp(38px,8vw,60px);font-weight:900;letter-spacing:-.03em;line-height:1}
+  .calc-res .big-l{color:var(--g400);font-size:14px;margin-top:8px;font-weight:600}
+  .calc-res .mini{display:flex;justify-content:space-around;margin-top:26px;padding-top:22px;border-top:1px solid var(--line2)}
+  .calc-res .mini div{font-size:12px;color:var(--g500);text-transform:uppercase;letter-spacing:.05em}
+  .calc-res .mini b{display:block;font-size:22px;color:#fff;font-weight:900;margin-top:4px;letter-spacing:-.01em}
+  .hook-num{font-size:clamp(30px,6vw,44px);font-weight:900;letter-spacing:-.02em;line-height:1;margin:6px 0}
+  .calc-divider{height:1px;background:var(--line2);margin:22px 0}
+  .reveal-row{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:8px}
+  #lockIcon{font-size:15px}
+  .blurred{filter:blur(11px);user-select:none;pointer-events:none}
+  .gate-copy{color:var(--g400);font-size:13px;line-height:1.6;margin:16px 0 16px}
+  #calcForm .frow{gap:12px}
+  #calcForm .fg{margin-bottom:12px}
+  #calcForm .consent{margin:4px 0 16px;text-align:left}
+  .revealed-note{margin-top:18px;padding:14px 16px;background:rgba(123,45,139,.14);border:1px solid rgba(123,45,139,.35);border-radius:12px;color:#e9d5ff;font-size:13.5px;font-weight:600;line-height:1.5}
+  /* Free report section */
+  .report-grid{display:grid;grid-template-columns:1fr;gap:32px;margin-top:48px;align-items:start}
+  @media(min-width:920px){.report-grid{grid-template-columns:0.8fr 1.2fr;gap:44px}}
+  .report-info h3{font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:-.01em;margin-bottom:18px}
+  .report-list{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .report-list li{padding-left:30px;position:relative;color:var(--g300);font-size:15px;line-height:1.5}
+  .report-list li::before{content:"✓";position:absolute;left:0;top:0;color:var(--p400);font-weight:900}
+  .report-list li b{color:#fff}
+  .report-badge{margin-top:24px;display:inline-block;background:rgba(123,45,139,.14);border:1px solid rgba(123,45,139,.35);border-radius:999px;padding:9px 16px;color:#e9d5ff;font-size:13px;font-weight:700}
+  .report-sep{display:flex;align-items:center;text-align:center;color:var(--g500);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:14px 0 16px}
+  .report-sep::before,.report-sep::after{content:"";flex:1;height:1px;background:var(--line2)}
+  .report-sep span{padding:0 14px}
+  .report-preview{display:flex;gap:12px;margin-top:22px}
+  .report-preview .pv{flex:1;background:var(--bg);border:1px solid rgba(123,45,139,.35);border-radius:12px;padding:16px 12px}
+  .report-preview .pv b{display:block;font-size:24px;font-weight:900;letter-spacing:-.01em}
+  .report-preview .pv span{display:block;font-size:11px;color:var(--g500);margin-top:4px;text-transform:uppercase;letter-spacing:.04em}
+
+  /* Process */
+  .proc{display:grid;grid-template-columns:1fr;gap:32px;margin-top:56px;position:relative}
+  @media(min-width:640px){.proc{grid-template-columns:1fr 1fr}}
+  @media(min-width:1040px){.proc{grid-template-columns:repeat(4,1fr)}}
+  .proc-line{display:none}
+  @media(min-width:1040px){.proc-line{display:block;position:absolute;top:24px;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,rgba(123,45,139,.3),transparent)}}
+  .pstep .circle{width:48px;height:48px;border-radius:50%;background:rgba(123,45,139,.1);border:1px solid rgba(123,45,139,.4);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;color:var(--p400);margin-bottom:20px;position:relative;z-index:2}
+  .pstep h3{font-size:18px;font-weight:900;text-transform:uppercase;margin-bottom:10px;letter-spacing:-.01em}
+  .pstep p{color:var(--g400);font-size:14px;line-height:1.6}
+
+  /* Fit */
+  .fit{display:grid;grid-template-columns:1fr;gap:24px;margin-top:48px}
+  @media(min-width:760px){.fit{grid-template-columns:1fr 1fr}}
+  .fitcol{background:var(--bg);border:1px solid var(--line2);border-radius:18px;padding:32px}
+  .fitcol.yes{border-top:3px solid var(--p500)}
+  .fitcol.no{border-top:3px solid #333}
+  .fitcol h3{font-size:18px;font-weight:800;text-transform:uppercase;margin-bottom:18px;letter-spacing:-.01em}
+  .fitcol ul{list-style:none}
+  .fitcol li{padding:9px 0 9px 30px;position:relative;color:var(--g300);font-size:15px}
+  .fitcol.yes li::before{content:"✓";position:absolute;left:0;color:var(--p400);font-weight:900}
+  .fitcol.no li::before{content:"—";position:absolute;left:0;color:var(--g600);font-weight:900}
+
+  /* FAQ */
+  .faq{max-width:820px;margin:48px auto 0}
+  details{border-bottom:1px solid var(--line2);padding:6px 0}
+  summary{cursor:pointer;padding:20px 0;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:26px;color:var(--p400);font-weight:300;line-height:1}
+  details[open] summary::after{content:"–"}
+  details .a{padding:0 0 22px;color:var(--g400);font-size:15px;line-height:1.7;max-width:720px}
+
+  /* CTA band */
+  .ctaband{background:var(--p600);position:relative;overflow:hidden;padding:clamp(64px,9vw,100px) 0;text-align:center}
+  .ctaband .g{position:absolute;inset:0;opacity:.1;background-image:linear-gradient(rgba(255,255,255,.15) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.15) 1px,transparent 1px);background-size:60px 60px}
+  .ctaband h2{font-size:clamp(32px,6vw,72px);font-weight:900;text-transform:uppercase;line-height:1.02;position:relative;margin-bottom:20px}
+  .ctaband p{color:#f3e8ff;font-size:19px;max-width:600px;margin:0 auto 34px;position:relative}
+  .ctaband .btns{position:relative;display:flex;flex-direction:column;gap:14px;justify-content:center}
+  @media(min-width:560px){.ctaband .btns{flex-direction:row}}
+  .btn-w{background:#fff;color:var(--p700)}.btn-w:hover{background:#f3f4f6}
+  .btn-wo{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45)}.btn-wo:hover{border-color:#fff;background:rgba(255,255,255,.1)}
+
+  /* Contact / Form */
+  .contact{display:grid;grid-template-columns:1fr;gap:48px;margin-top:52px;align-items:start}
+  @media(min-width:960px){.contact{grid-template-columns:0.85fr 1.15fr}}
+  .cinfo .row{margin-bottom:28px}
+  .cinfo .lbl{color:var(--p500);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+  .cinfo .val{font-size:22px;font-weight:800}
+  .cinfo .val:hover{color:var(--p400)}
+  .trustlist{margin-top:36px;display:flex;flex-direction:column;gap:14px}
+  .trustlist div{display:flex;align-items:center;gap:12px;color:var(--g300);font-size:15px;font-weight:500}
+  .trustlist .c{color:var(--p400);font-weight:900}
+  .formcard{background:var(--bg);border:1px solid var(--line2);border-radius:22px;padding:clamp(24px,4vw,40px)}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:520px){.frow{grid-template-columns:1fr}}
+  .fg{margin-bottom:18px}
+  .fg label{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g400);margin-bottom:8px}
+  .fg input,.fg select{width:100%;padding:14px 15px;background:#111;border:1px solid #2a2530;border-radius:11px;color:#fff;font-size:16px;font-family:inherit;transition:border-color .2s}
+  .fg input::placeholder{color:#555}
+  .fg input:focus,.fg select:focus{outline:none;border-color:var(--p500)}
+  .fg select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%239ca3af' stroke-width='2.5' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
+  .consent{display:flex;gap:11px;align-items:flex-start;margin:6px 0 22px;color:var(--g400);font-size:12.5px;line-height:1.5}
+  .consent input{margin-top:2px;width:18px;height:18px;flex-shrink:0;accent-color:var(--p600)}
+  .formcard .btn{width:100%;font-size:17px;padding:17px}
+  .fnote{text-align:center;color:var(--g500);font-size:13px;margin-top:16px}
+  .success{display:none;text-align:center;padding:20px}
+  .success .em{font-size:56px}
+  .success h3{font-size:26px;font-weight:900;text-transform:uppercase;margin:14px 0 10px}
+  .success p{color:var(--g400);max-width:400px;margin:0 auto}
+
+  /* Footer */
+  footer{background:var(--bg3);border-top:1px solid var(--line);padding:64px 0 32px}
+  .fgrid{display:grid;grid-template-columns:1fr;gap:40px;margin-bottom:48px}
+  @media(min-width:768px){.fgrid{grid-template-columns:2fr 1fr}}
+  .fbrand p{color:var(--g500);font-size:14px;line-height:1.7;margin:20px 0;max-width:420px}
+  .fbrand .contacts a{color:var(--g400);font-size:14px;font-weight:600}.fbrand .contacts a:hover{color:var(--p400)}
+  .fbrand .contacts span{color:#444;margin:0 10px}
+  .fcol h4{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+  .fcol a{display:block;color:var(--g500);font-size:14px;margin-bottom:12px}.fcol a:hover{color:var(--g300)}
+  .fine{border-top:1px solid var(--line);padding-top:26px;color:var(--g600);font-size:11.5px;line-height:1.7}
+  .fine strong{color:var(--g400)}
+  .copy{color:#3f3f46;font-size:12px;margin-top:18px}
+  .anchor{scroll-margin-top:80px}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="navin">
+    <a href="#top" class="logo">
+      <svg width="34" height="34" viewBox="0 0 160 160" fill="none">
+        <circle cx="80" cy="80" r="16" fill="#fff"/>
+        <circle cx="80" cy="80" r="36" stroke="#fff" stroke-width="8" fill="none"/>
+        <circle cx="80" cy="80" r="56" stroke="#fff" stroke-width="8" fill="none"/>
+        <circle cx="80" cy="80" r="74" stroke="#fff" stroke-width="8" fill="none"/>
+      </svg>
+      <span class="wm"><b>Purple Dot</b><span>Financial Inc.</span></span>
+    </a>
+    <div class="navlinks">
+      <a href="#strategies">Strategies</a>
+      <a href="#calc">Free Report</a>
+      <a href="#faq">FAQ</a>
+      <a href="#apply">Contact</a>
+    </div>
+    <div class="navcta">
+      <a href="tel:6475248645" class="tel">647-524-8645</a>
+      <a href="#calc" class="btn btn-p pulse-glow">Get My Report</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="top" class="hero bg-grid">
+  <div class="glow-a"></div><div class="glow-b"></div>
+  <div class="inner">
+    <div class="badge"><span class="d dotpulse"></span><span>Residential Mortgage Strategy · Canada 🇨🇦</span></div>
+    <h1>Your Mortgage.<br>Working <span class="grad">For You.</span></h1>
+    <div class="cyc"><p>Specialists in&nbsp;<span class="grad word" id="cyc">THE SMITH MANOEUVRE.</span></p></div>
+    <p class="sub">Most Canadians hand the bank <b>hundreds of thousands</b> in mortgage interest they can never deduct. The <b>Smith Manoeuvre</b>, <b>cash damming</b>, and <b>all-in-one readvanceable mortgages</b> legally flip that — so you pay off your home years sooner and turn interest into a tax advantage.</p>
+    <div class="hero-cta">
+      <a href="#calc" class="btn btn-p glow">Get My Free Report <span class="arr">→</span></a>
+      <a href="#strategies" class="btn btn-o">How It Works</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b class="grad">$300K+</b><span>Typical mortgage interest paid</span></div>
+      <div class="stat"><b>$0</b><span>Of it most can deduct today</span></div>
+      <div class="stat"><b class="grad">5–8 yrs</b><span>Potential faster payoff*</span></div>
+      <div class="stat"><b>100%</b><span>Canadian &amp; licensed</span></div>
+    </div>
+  </div>
+  <div class="scroll-ind"><span>Scroll</span><span style="color:var(--p600)">↓</span></div>
+</header>
+
+<!-- WHY -->
+<section class="sec sec-2 anchor" id="why">
+  <div class="wrap">
+    <div class="why">
+      <div class="why-left">
+        <p class="eyebrow">The Problem</p>
+        <h2 class="big">Is Your Mortgage<br>Working <span class="grad">Against You?</span></h2>
+        <p class="lead" style="margin-top:24px">Your mortgage is the single most expensive thing you'll ever own — and unlike an investor or business owner, you can't deduct a dollar of the interest. Unless it's structured differently.</p>
+        <div class="quote">
+          <p>"We showed a Toronto homeowner how to turn 25 years of dead-money interest into a tax-deductible, wealth-building engine — without changing their lifestyle."</p>
+          <span>— Purple Dot Financial Team</span>
+        </div>
+      </div>
+      <div class="reasons">
+        <div class="reason"><div class="n">01</div><div><h3>Hundreds of thousands in dead interest</h3><p>Over a typical mortgage you'll pay $300,000+ in interest. None of it works for you, and none of it comes back at tax time.</p></div></div>
+        <div class="reason"><div class="n">02</div><div><h3>Zero tax deduction</h3><p>Business owners and investors deduct their interest. Homeowners don't — unless the borrowing is restructured to earn investment income.</p></div></div>
+        <div class="reason"><div class="n">03</div><div><h3>Decades on the amortization clock</h3><p>The standard payment schedule keeps you paying for 25–30 years. Strategies like these can compress that dramatically.</p></div></div>
+        <div class="reason"><div class="n">04</div><div><h3>Idle equity</h3><p>Your home has likely appreciated — but that equity sits still instead of building your net worth while you pay down the mortgage.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRATEGIES -->
+<section class="sec anchor" id="strategies">
+  <div class="wrap">
+    <p class="eyebrow">What We Do</p>
+    <h2 class="big">Three Ways To Turn<br>Interest Into <span class="grad">Advantage.</span></h2>
+    <p class="lead" style="margin-top:20px">These aren't loopholes — they're established, CRA-recognized strategies. The catch is they have to be set up <em>correctly</em>. That's exactly what we do, and our underwriter handles the rest.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="num">01</div><div class="ico">🔄</div>
+        <h3>The Smith Manoeuvre</h3>
+        <p>As you pay down your mortgage, a linked line of credit grows. You invest that credit — making the interest tax-deductible and building wealth <em>while</em> you pay off your home.</p>
+        <div class="tags"><span>Readvanceable</span><span>Tax-Deductible</span><span>Wealth-Building</span></div>
+      </div>
+      <div class="card">
+        <div class="num">02</div><div class="ico">💧</div>
+        <h3>Cash Damming</h3>
+        <p>Built for business owners and rental owners. Route deductible expenses through a line of credit so your non-deductible mortgage gets paid down first — accelerating your payoff.</p>
+        <div class="tags"><span>Business</span><span>Rental</span><span>Faster Payoff</span></div>
+      </div>
+      <div class="card">
+        <div class="num">03</div><div class="ico">🏦</div>
+        <h3>All-In-One Mortgage</h3>
+        <p>An <b>all-in-one readvanceable mortgage</b> combines your mortgage, savings, and income into one account — so every dollar you earn cuts your interest the moment it lands.</p>
+        <div class="tags"><span>All-In-One</span><span>Flexible</span><span>Efficient</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FREE REPORT (lead magnet) -->
+<section class="sec sec-2 anchor" id="calc">
+  <div class="wrap">
+    <div style="text-align:center;max-width:740px;margin:0 auto">
+      <p class="eyebrow">Free Personalized Report</p>
+      <h2 class="big">See Your Numbers In A<br><span class="grad">Free Personal Report</span></h2>
+      <p class="lead" style="margin:20px auto 0">Answer a few quick questions and we'll email you a personalized Smith Manoeuvre report — how many years sooner you could be mortgage-free, your estimated annual tax refund, and the wealth you could build. With clear graphs.</p>
+    </div>
+
+    <div class="report-grid">
+      <div class="report-info">
+        <h3>What's inside your report</h3>
+        <ul class="report-list">
+          <li><b>Years faster</b> — when you could be mortgage-free</li>
+          <li><b>Annual tax refund</b> — estimated from your income &amp; province</li>
+          <li><b>Wealth built</b> — the portfolio you could grow alongside it</li>
+          <li><b>Clear graphs</b> — your payoff timeline &amp; wealth, visualized</li>
+          <li><b>Your full breakdown</b> — every number, personalized to you</li>
+        </ul>
+        <div class="report-badge">📄 2-page PDF · emailed instantly · no cost</div>
+      </div>
+
+      <div class="formcard">
+        <div id="reportInner">
+          <form id="reportForm" novalidate>
+            <div class="frow">
+              <div class="fg"><label>Estimated home value*</label><input type="tel" name="homeValue" placeholder="$800,000" required></div>
+              <div class="fg"><label>Mortgage balance*</label><input type="tel" name="mortgageBalance" placeholder="$450,000" required></div>
+            </div>
+            <div class="frow">
+              <div class="fg"><label>Mortgage rate*</label><input type="tel" name="mortgageRate" placeholder="5.0%" required></div>
+              <div class="fg"><label>Years left on mortgage*</label><input type="tel" name="yearsLeft" placeholder="20" required></div>
+            </div>
+            <div class="frow">
+              <div class="fg"><label>Province*</label>
+                <select name="province" required>
+                  <option value="">Select…</option>
+                  <option>AB</option><option>BC</option><option>MB</option><option>NB</option><option>NL</option><option>NS</option><option>NT</option><option>NU</option><option selected>ON</option><option>PE</option><option>QC</option><option>SK</option><option>YT</option>
+                </select>
+              </div>
+              <div class="fg"><label>Your annual income*</label><input type="tel" name="income" placeholder="$120,000" required></div>
+            </div>
+            <div class="report-sep"><span>Where should we send your report?</span></div>
+            <div class="frow">
+              <div class="fg"><label>First name*</label><input name="firstName" required></div>
+              <div class="fg"><label>Last name*</label><input name="lastName" required></div>
+            </div>
+            <div class="frow">
+              <div class="fg"><label>Email*</label><input type="email" name="email" required></div>
+              <div class="fg"><label>Phone*</label><input type="tel" name="phone" required placeholder="(416) 555-0123"></div>
+            </div>
+            <label class="consent"><input type="checkbox" id="reportCasl"><span>I agree to be contacted by Purple Dot Financial about my enquiry. Unsubscribe anytime.</span></label>
+            <button type="submit" class="btn btn-p glow" id="reportBtn" style="width:100%">📄 Email My Free Report</button>
+            <p class="fnote">🔒 No spam. Illustrative estimate — not financial advice.</p>
+          </form>
+        </div>
+        <div class="success" id="reportSuccess">
+          <div class="em">📄</div>
+          <h3>Check Your Inbox!</h3>
+          <p>Your personalized report is on its way. A licensed advisor will follow up to walk you through it.</p>
+          <div class="report-preview" id="reportPreview"></div>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="text-align:center;max-width:760px;margin:26px auto 0">Figures in your report are illustrative estimates only — not investment, tax, or legal advice, and not a guarantee of results. The Smith Manoeuvre involves borrowing to invest, which carries risk including loss of capital. A licensed advisor will confirm the real numbers for your situation.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="sec anchor" id="process">
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="eyebrow">How It Works</p>
+      <h2 class="big">Four Steps.<br><span class="grad">Done For You.</span></h2>
+    </div>
+    <div class="proc">
+      <div class="proc-line"></div>
+      <div class="pstep"><div class="circle">01</div><h3>Tell Us About Your Home</h3><p>Answer a few quick questions below. Under 60 seconds — no credit check, no commitment.</p></div>
+      <div class="pstep"><div class="circle">02</div><h3>We Design Your Strategy</h3><p>A licensed professional reviews your equity, income, and goals and maps the right structure for you.</p></div>
+      <div class="pstep"><div class="circle">03</div><h3>We Arrange The Mortgage</h3><p>Our underwriter handles the readvanceable mortgage, approvals, paperwork, and closing — end to end.</p></div>
+      <div class="pstep"><div class="circle">04</div><h3>Your Mortgage Works For You</h3><p>You pay down your home faster and turn interest into a tax advantage — guided the whole way.</p></div>
+    </div>
+    <div style="text-align:center;margin-top:52px"><a href="#calc" class="btn btn-p glow">Get My Free Report →</a></div>
+  </div>
+</section>
+
+<!-- FIT -->
+<section class="sec sec-2 anchor" id="fit">
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="eyebrow">Straight Talk</p>
+      <h2 class="big">Is This <span class="grad">Right For You?</span></h2>
+      <p class="lead" style="margin:20px auto 0">Honesty matters. These strategies are powerful — but they aren't for everyone.</p>
+    </div>
+    <div class="fit">
+      <div class="fitcol yes">
+        <h3>✅ A strong fit if you…</h3>
+        <ul>
+          <li>Own your home with roughly 20%+ equity</li>
+          <li>Have stable employment or business income</li>
+          <li>Want to pay off your mortgage faster</li>
+          <li>Are comfortable investing for the long term</li>
+          <li>Are a business or rental owner (cash damming)</li>
+        </ul>
+      </div>
+      <div class="fitcol no">
+        <h3>Probably not yet if you…</h3>
+        <ul>
+          <li>Don't yet own a home (we can still help you buy)</li>
+          <li>Have very little equity built up</li>
+          <li>Need the money short-term or want zero market risk</li>
+          <li>Are after a "get rich quick" scheme — this is long-term</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec anchor" id="faq">
+  <div class="wrap">
+    <div style="text-align:center"><p class="eyebrow">Questions</p><h2 class="big">Straight <span class="grad">Answers.</span></h2></div>
+    <div class="faq">
+      <details open><summary>Is this actually legal?</summary><div class="a">Yes. The tax-deductibility of interest on money borrowed to earn investment income is well established under Canadian tax law. The strategies must be implemented correctly to qualify — which is exactly why working with a professional matters. This page is educational and not tax advice; a licensed advisor will confirm what applies to you.</div></details>
+      <details><summary>What's the catch — is it risky?</summary><div class="a">These strategies involve borrowing to invest (leverage), which amplifies both gains and losses. They suit homeowners with stable income and a long-term horizon who are comfortable with market fluctuations. We walk you through the risks honestly before you decide anything.</div></details>
+      <details><summary>Do I have to sell my investments or change banks?</summary><div class="a">Usually not. In most cases we restructure your existing mortgage into a readvanceable one. We'll tell you upfront exactly what would change in your specific situation.</div></details>
+      <details><summary>How much does your help cost?</summary><div class="a">The initial review and strategy consultation are free with no obligation. Mortgage arrangement is compensated the standard way in Canada — we explain all of it transparently before you commit to anything.</div></details>
+      <details><summary>What happens after I submit the form?</summary><div class="a">A licensed mortgage professional personally reviews your information and reaches out — usually within one business day — to discuss your options. No pressure, no obligation.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="ctaband">
+  <div class="g"></div>
+  <h2>Ready To Make<br>Your Mortgage<br>Tax-Deductible?</h2>
+  <p>See how much faster you could pay off your home — and what it could save you. Free, no obligation.</p>
+  <div class="btns">
+    <a href="#calc" class="btn btn-w">Get My Free Report →</a>
+    <a href="https://calendly.com/purpledotfinancial/" target="_blank" rel="noopener noreferrer" class="btn btn-wo">Book a Free Call</a>
+  </div>
+</section>
+
+<!-- CONTACT / FORM -->
+<section class="sec anchor" id="apply">
+  <div class="wrap">
+    <div style="text-align:center">
+      <p class="eyebrow">Talk To Us</p>
+      <h2 class="big">Prefer To <span class="grad">Talk It Through?</span></h2>
+      <p class="lead" style="margin:20px auto 0">Get your free personalized report above — or book a no-obligation call and a licensed mortgage professional will walk you through your numbers personally.</p>
+    </div>
+    <div class="contact">
+      <div class="cinfo">
+        <div class="row"><div class="lbl">Phone</div><a href="tel:6475248645" class="val">647-524-8645</a></div>
+        <div class="row"><div class="lbl">Email</div><a href="mailto:info@purpledotfinancial.com" class="val" style="font-size:17px">info@purpledotfinancial.com</a></div>
+        <div class="row"><div class="lbl">Prefer to talk?</div><a href="https://calendly.com/purpledotfinancial/" target="_blank" rel="noopener noreferrer" class="val" style="font-size:17px">Book a free call →</a></div>
+        <div class="trustlist">
+          <div><span class="c">✓</span> Licensed mortgage professionals</div>
+          <div><span class="c">✓</span> No cost, no obligation</div>
+          <div><span class="c">✓</span> No credit check to enquire</div>
+          <div><span class="c">✓</span> Your info is private &amp; never sold</div>
+        </div>
+      </div>
+      <div class="formcard" style="display:flex;flex-direction:column;justify-content:center;text-align:center;gap:16px">
+        <div style="font-size:48px">📅</div>
+        <h3 style="font-size:24px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em">Book A Free Call</h3>
+        <p style="color:var(--g400)">Pick a time that suits you. A licensed mortgage professional will review your situation and answer your questions — no cost, no pressure.</p>
+        <a href="https://calendly.com/purpledotfinancial/" target="_blank" rel="noopener noreferrer" class="btn btn-p glow" style="width:100%">Book a Free Call →</a>
+        <a href="tel:6475248645" class="btn btn-o" style="width:100%">📞 Call 647-524-8645</a>
+        <p style="color:var(--g500);font-size:13px;border-top:1px solid var(--line2);padding-top:16px;margin-top:4px">Haven't run your numbers yet? <a href="#calc" style="color:var(--p400);font-weight:700">Get your free report →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 160 160" fill="none">
+            <circle cx="80" cy="80" r="16" fill="#fff"/><circle cx="80" cy="80" r="36" stroke="#fff" stroke-width="8" fill="none"/><circle cx="80" cy="80" r="56" stroke="#fff" stroke-width="8" fill="none"/><circle cx="80" cy="80" r="74" stroke="#fff" stroke-width="8" fill="none"/>
+          </svg>
+          <span class="wm"><b>Purple Dot</b><span>Financial Inc.</span></span>
+        </div>
+        <p>Helping Canadian homeowners pay off their mortgages faster and smarter — using the Smith Manoeuvre, cash damming, and readvanceable mortgage strategies.</p>
+        <div class="contacts"><a href="tel:6475248645">647-524-8645</a><span>·</span><a href="mailto:info@purpledotfinancial.com">info@purpledotfinancial.com</a></div>
+      </div>
+      <div class="fcol">
+        <h4>Explore</h4>
+        <a href="#strategies">The Strategies</a>
+        <a href="#calc">Free Report</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://calendly.com/purpledotfinancial/" target="_blank" rel="noopener noreferrer">Book a Consultation</a>
+        <a href="/residential/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="fine">
+      <strong>Important disclosures.</strong> This website is for general educational purposes only and does not constitute mortgage, investment, tax, accounting, or legal advice, nor an offer or solicitation to buy any product. The Smith Manoeuvre, cash damming, and readvanceable mortgage strategies involve borrowing to invest ("leverage"), which increases risk and can result in losses greater than your original investment, including the potential loss of capital. Tax deductibility of interest depends on your individual circumstances and current Canada Revenue Agency rules and is not guaranteed. Any figures, savings, timeframes, or calculator results shown are illustrative estimates only, are not guarantees of future results, and will vary based on your rate, income, investment returns, fees, and how the strategy is implemented. All mortgage products are subject to lender approval and eligibility criteria. Purple Dot Financial operates as a mortgage agent team under Choice Financial Corp. (Independently Owned &amp; Operated) — Mortgage Agent Licence #M19002147; brokerage licences ON #13564 | QC #13564 | AB RECA | BCFSA #MB605782. Before acting on any strategy described here, consult a licensed mortgage professional, a qualified financial advisor, and a tax professional regarding your specific situation.
+      <div class="copy">© <span id="yr"></span> Purple Dot Financial Inc. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Navbar scroll
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>20);
+  window.addEventListener('scroll',onScroll);onScroll();
+
+  // Cycling hero word
+  const WORDS=['THE SMITH MANOEUVRE.','CASH DAMMING.','TAX-DEDUCTIBLE MORTGAGES.','ALL-IN-ONE MORTGAGES.','PAYING OFF FASTER.'];
+  const cyc=document.getElementById('cyc');let ci=0;
+  setInterval(()=>{cyc.style.opacity='0';cyc.style.transform='translateY(12px)';
+    setTimeout(()=>{ci=(ci+1)%WORDS.length;cyc.textContent=WORDS[ci];cyc.style.opacity='1';cyc.style.transform='translateY(0)';},350);},2800);
+
+  // Free report form (lead magnet) — collect everything, email a PDF
+  const reportForm=document.getElementById('reportForm'),reportBtn=document.getElementById('reportBtn');
+  reportForm.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(!document.getElementById('reportCasl').checked){alert('Please check the consent box so we can email your report and contact you.');return;}
+    const data=Object.fromEntries(new FormData(reportForm).entries());
+    data.caslConsent=true;
+    data.homeowner='Yes';
+    data.goal='taxsavings';
+    data.timeframe='exploring';
+    data.source='Free Report (Meta)';
+    data.pageUrl=location.href;
+    reportBtn.disabled=true;reportBtn.textContent='Building your report…';
+    try{
+      const res=await fetch('/api/submit-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+      const j=await res.json();
+      if(!res.ok||!j.success)throw new Error(j.error||'Something went wrong');
+      if(window.fbq)fbq('track','Lead');
+      const p=j.preview;
+      if(p){
+        document.getElementById('reportPreview').innerHTML=
+          '<div class="pv"><b class="grad">'+(p.yearsFaster||'—')+'</b><span>Mortgage-free sooner</span></div>'+
+          '<div class="pv"><b>'+(p.annualRefund||'—')+'</b><span>Est. annual tax refund</span></div>';
+      }
+      document.getElementById('reportInner').style.display='none';
+      document.getElementById('reportSuccess').style.display='block';
+      document.getElementById('reportSuccess').scrollIntoView({behavior:'smooth',block:'center'});
+    }catch(err){
+      alert('Sorry — '+err.message+'. Please try again or call us at 647-524-8645.');
+      reportBtn.disabled=false;reportBtn.textContent='📄 Email My Free Report';
+    }
+  });
+
+</script>
+</body>
+</html>
