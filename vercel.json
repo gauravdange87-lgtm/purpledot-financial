@@ -2,6 +2,8 @@
   "cleanUrls": true,
   "rewrites": [
     { "source": "/residential", "destination": "/residential/index.html" },
+    { "source": "/calculator/debt", "destination": "/calculator/debt/index.html" },
+    { "source": "/debt-consolidation", "destination": "/debt-consolidation/index.html" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }

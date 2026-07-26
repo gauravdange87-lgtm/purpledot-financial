@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>See Your New Payment — Debt Consolidation Calculator | Purple Dot Financial</title>
+<meta name="description" content="Consolidate high-interest credit cards and loans into one lower monthly payment using your home equity. See your new payment in seconds. Free, no credit check to enquire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- ============ META PIXEL · Purple Dot (shared with residential funnel) ============ -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','780946345110727');
+fbq('track','PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=780946345110727&ev=PageView&noscript=1"/></noscript>
+<!-- ======================================================================== -->
+
+<style>
+  :root{
+    --bg:#0a0a0a; --bg2:#0d0d0d; --bg3:#080808;
+    --p400:#b06ecf; --p500:#9B4DCA; --p600:#7B2D8B; --p700:#5f1f6d;
+    --line:#1a1a1a; --line2:#1e1e1e;
+    --g300:#d1d5db; --g400:#9ca3af; --g500:#6b7280; --g600:#4b5563;
+    --green:#22c55e; --green2:#4ade80;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:#fff;font-family:'Montserrat',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#111}::-webkit-scrollbar-thumb{background:var(--p600);border-radius:3px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+  .grad{background:linear-gradient(135deg,#9B4DCA 0%,#7B2D8B 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .gradg{background:linear-gradient(135deg,#4ade80 0%,#22c55e 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .bg-grid{background-image:linear-gradient(rgba(123,45,139,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(123,45,139,.07) 1px,transparent 1px);background-size:60px 60px}
+  .eyebrow{color:var(--p500);font-size:12px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;margin-bottom:14px}
+  h1,h2,h3{line-height:1.06;letter-spacing:-.01em}
+  .glow{box-shadow:0 0 40px rgba(123,45,139,.4),0 0 80px rgba(123,45,139,.15)}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .dotpulse{animation:pulse 2s ease-in-out infinite}
+  @keyframes shimmer{0%,100%{opacity:.55}50%{opacity:.9}}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800;font-size:16px;
+    padding:15px 30px;border-radius:12px;cursor:pointer;border:none;transition:all .2s;font-family:inherit}
+  .btn-p{background:var(--p600);color:#fff}
+  .btn-p:hover{background:var(--p500)}
+  .btn-o{background:transparent;color:#fff;border:1px solid #374151}
+  .btn-o:hover{border-color:rgba(155,77,202,.6);background:rgba(255,255,255,.05)}
+  .btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line2)}
+  .navin{max-width:1160px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo .wm{display:flex;flex-direction:column;line-height:1}
+  .logo .wm b{font-size:15px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#fff}
+  .logo .wm span{font-size:8.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+  .navtel{color:#fff;font-size:14px;font-weight:800}
+  .navtel:hover{color:var(--p400)}
+
+  .top{position:relative;overflow:hidden;padding:44px 0 8px}
+  .glow-a{position:absolute;top:-140px;right:-120px;width:600px;height:600px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(123,45,139,.16) 0%,transparent 70%)}
+  .glow-b{position:absolute;bottom:-160px;left:-140px;width:520px;height:520px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(34,197,94,.08) 0%,transparent 70%)}
+  .top .inner{position:relative;text-align:center;max-width:760px;margin:0 auto}
+  .badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(123,45,139,.4);border-radius:999px;padding:7px 16px;margin-bottom:20px}
+  .badge .d{width:8px;height:8px;border-radius:50%;background:var(--p500)}
+  .badge span{color:var(--p400);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+  h1.big{font-size:clamp(34px,6.5vw,62px);font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:1.02}
+  .top .sub{color:var(--g400);font-size:clamp(15px,2vw,18px);max-width:600px;margin:18px auto 0;line-height:1.6}
+  .top .sub b{color:#fff;font-weight:700}
+  .trust-hero{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 20px;margin:20px 0 0}
+  .trust-hero span{color:var(--g300);font-size:12.5px;font-weight:700;display:inline-flex;align-items:center;gap:6px}
+  .trust-hero span::before{content:"✓";color:var(--green2);font-weight:900}
+
+  .calcwrap{padding:32px 0 64px}
+  .calc{background:var(--bg2);border:1px solid var(--line2);border-radius:22px;padding:clamp(22px,3.5vw,40px)}
+  .calc-grid{display:grid;grid-template-columns:1fr;gap:36px;align-items:start}
+  @media(min-width:900px){.calc-grid{grid-template-columns:1fr 1fr}}
+  .field{margin-bottom:22px}
+  .field label{display:flex;justify-content:space-between;align-items:baseline;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--g300);margin-bottom:11px}
+  .field label b{font-size:19px;font-weight:900;letter-spacing:0;text-transform:none;color:#fff}
+  input[type=range]{width:100%;height:5px;-webkit-appearance:none;appearance:none;background:#26202b;border-radius:999px;outline:none}
+  input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:24px;height:24px;border-radius:50%;background:var(--p500);cursor:pointer;box-shadow:0 0 16px rgba(155,77,202,.7)}
+  input[type=range]::-moz-range-thumb{width:24px;height:24px;border:none;border-radius:50%;background:var(--p500);cursor:pointer}
+  .note{color:var(--g600);font-size:12px;line-height:1.55;margin-top:6px}
+
+  .calc-res{background:linear-gradient(160deg,rgba(123,45,139,.14),rgba(10,10,10,0));border:1px solid rgba(123,45,139,.35);border-radius:18px;padding:28px}
+  .res-freed{background:linear-gradient(160deg,rgba(34,197,94,.14),rgba(10,10,10,0));border:1px solid rgba(34,197,94,.4);border-radius:16px;padding:22px;margin-bottom:16px;text-align:center}
+  .res-freed .lbl{color:var(--green2);font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:6px}
+  .res-freed .big{font-size:clamp(38px,8vw,60px);font-weight:900;letter-spacing:-.03em;line-height:1}
+  .res-freed .sm{color:var(--g400);font-size:13px;margin-top:8px;font-weight:600}
+  .pay-row{display:flex;gap:12px;margin-bottom:16px}
+  .pay-box{flex:1;background:var(--bg);border:1px solid var(--line2);border-radius:14px;padding:15px 12px;text-align:center}
+  .pay-box .k{font-size:11px;color:var(--g500);text-transform:uppercase;letter-spacing:.05em;font-weight:700}
+  .pay-box .v{font-size:clamp(20px,4vw,26px);font-weight:900;margin-top:6px;letter-spacing:-.01em}
+  .pay-box.old .v{color:#ef7c7c;text-decoration:line-through;text-decoration-color:rgba(239,124,124,.5)}
+  .pay-box.new .v{color:#fff}
+  .mini{display:flex;justify-content:space-around;padding-top:16px;border-top:1px solid var(--line2)}
+  .mini div{font-size:11px;color:var(--g500);text-transform:uppercase;letter-spacing:.04em;font-weight:700;text-align:center}
+  .mini b{display:block;font-size:19px;color:#fff;font-weight:900;margin-top:5px;letter-spacing:-.01em}
+  .equity-chip{display:block;text-align:center;margin-top:16px;font-size:12.5px;font-weight:700;border-radius:999px;padding:8px 15px}
+  .equity-chip.ok{background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.4);color:var(--green2)}
+  .equity-chip.warn{background:rgba(234,179,8,.1);border:1px solid rgba(234,179,8,.35);color:#facc15}
+
+  .locked{filter:blur(10px);user-select:none;pointer-events:none;opacity:.9;animation:shimmer 2.4s ease-in-out infinite}
+  .locknote{margin:16px 0 4px;text-align:center;color:#e9d5ff;font-size:13.5px;font-weight:700;line-height:1.5}
+
+  .gate{margin-top:20px;border-top:1px solid var(--line2);padding-top:22px}
+  .gate h3{font-size:20px;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;text-align:center;margin-bottom:6px}
+  .gate .gsub{color:var(--g400);font-size:13.5px;line-height:1.55;text-align:center;margin:0 auto 16px;max-width:360px}
+  .trust-row{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 16px;margin:0 0 16px}
+  .trust-row span{color:var(--g400);font-size:11.5px;font-weight:700;display:inline-flex;align-items:center;gap:5px}
+  .trust-row span::before{content:"✓";color:var(--green2);font-weight:900}
+  .fg{margin-bottom:13px}
+  .fg label{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--g400);margin-bottom:7px}
+  .fg input,.fg select{width:100%;padding:13px 14px;background:#111;border:1px solid #2a2530;border-radius:11px;color:#fff;font-size:16px;font-family:inherit;transition:border-color .2s}
+  .fg input::placeholder{color:#555}
+  .fg input:focus,.fg select:focus{outline:none;border-color:var(--p500)}
+  .fg select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%239ca3af' stroke-width='2.5' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 15px center}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:480px){.frow{grid-template-columns:1fr}}
+  .consent{display:flex;gap:11px;align-items:flex-start;margin:6px 0 15px;color:var(--g400);font-size:12px;line-height:1.5}
+  .consent input{margin-top:2px;width:18px;height:18px;flex-shrink:0;accent-color:var(--p600)}
+  .gate .btn{width:100%;font-size:17px;padding:16px}
+  .fnote{text-align:center;color:var(--g500);font-size:12.5px;margin-top:13px}
+  .success{display:none;text-align:center;padding:16px 8px}
+  .success .em{font-size:52px}
+  .success h3{font-size:24px;font-weight:900;text-transform:uppercase;margin:12px 0 10px}
+  .success p{color:var(--g400);max-width:400px;margin:0 auto}
+
+  footer{background:var(--bg3);border-top:1px solid var(--line);padding:40px 0 30px;margin-top:8px}
+  .fmini{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}
+  .fmini .contacts a{color:var(--g400);font-size:14px;font-weight:600}.fmini .contacts a:hover{color:var(--p400)}
+  .fmini .contacts span{color:#444;margin:0 10px}
+  .fmini .flinks a{color:var(--g500);font-size:13px;font-weight:600;margin-left:18px}.fmini .flinks a:hover{color:var(--g300)}
+  .fine{border-top:1px solid var(--line);padding-top:22px;color:var(--g600);font-size:11.5px;line-height:1.7}
+  .fine strong{color:var(--g400)}
+  .copy{color:#3f3f46;font-size:12px;margin-top:16px}
+</style>
+</head>
+<body class="bg-grid">
+
+<!-- NAV -->
+<nav>
+  <div class="navin">
+    <a href="/debt-consolidation" class="logo">
+      <svg width="32" height="32" viewBox="0 0 160 160" fill="none">
+        <circle cx="80" cy="80" r="16" fill="#fff"/>
+        <circle cx="80" cy="80" r="36" stroke="#fff" stroke-width="8" fill="none"/>
+        <circle cx="80" cy="80" r="56" stroke="#fff" stroke-width="8" fill="none"/>
+        <circle cx="80" cy="80" r="74" stroke="#fff" stroke-width="8" fill="none"/>
+      </svg>
+      <span class="wm"><b>Purple Dot</b><span>Financial Inc.</span></span>
+    </a>
+    <a href="tel:6475248645" class="navtel">📞 647-524-8645</a>
+  </div>
+</nav>
+
+<!-- HEADER -->
+<header class="top">
+  <div class="glow-a"></div><div class="glow-b"></div>
+  <div class="wrap">
+    <div class="inner">
+      <div class="badge"><span class="d dotpulse"></span><span>Debt Consolidation Calculator · Canada 🇨🇦</span></div>
+      <h1 class="big">See Your New Payment<br><span class="grad">In Seconds.</span></h1>
+      <p class="sub">Homeowners: roll your <b>credit cards, loans, and lines of credit</b> into one lower monthly payment using your home equity. Set the sliders, then reveal your new payment.</p>
+      <div class="trust-hero"><span>No credit check to enquire</span><span>No obligation</span><span>Licensed &amp; Canadian</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- CALCULATOR -->
+<section class="calcwrap">
+  <div class="wrap">
+    <div class="calc">
+      <div class="calc-grid">
+        <!-- Inputs -->
+        <div>
+          <div class="field">
+            <label>Total high-interest debt <b id="lDebt">$45,000</b></label>
+            <input type="range" id="debt" min="5000" max="200000" step="1000" value="45000">
+            <p class="note">Credit cards, store cards, personal loans, unsecured lines of credit, car loans.</p>
+          </div>
+          <div class="field">
+            <label>Average interest rate on that debt <b id="lRate">19.99%</b></label>
+            <input type="range" id="rate" min="8" max="29.99" step="0.5" value="19.99">
+          </div>
+          <div class="field">
+            <label>What you pay on it now / month <b id="lPay">$1,350</b></label>
+            <input type="range" id="pay" min="200" max="6000" step="50" value="1350">
+            <p class="note">Roughly what you send to those cards and loans each month right now.</p>
+          </div>
+          <div class="field">
+            <label>Estimated home value <b id="lHome">$800,000</b></label>
+            <input type="range" id="home" min="300000" max="2500000" step="10000" value="800000">
+          </div>
+          <div class="field">
+            <label>Mortgage balance <b id="lMort">$420,000</b></label>
+            <input type="range" id="mort" min="0" max="1500000" step="10000" value="420000">
+          </div>
+        </div>
+
+        <!-- Result (gated) -->
+        <div class="calc-res">
+          <div id="lockedResult" class="locked">
+            <div class="res-freed">
+              <div class="lbl">💸 Cash freed up every month</div>
+              <div class="big gradg" id="rFreed">$862</div>
+              <div class="sm">back in your pocket, every single month</div>
+            </div>
+            <div class="pay-row">
+              <div class="pay-box old"><div class="k">Paying now</div><div class="v" id="rOld">$1,350</div></div>
+              <div class="pay-box new"><div class="k">New payment</div><div class="v" id="rNew">$488</div></div>
+            </div>
+            <div class="mini">
+              <div>1st-yr interest saved<b class="gradg" id="rInt">$6,530</b></div>
+              <div>Your rate<b id="rDrop">20% → 5.5%</b></div>
+            </div>
+            <div id="rEquity" class="equity-chip ok">✓ You appear to have enough equity</div>
+          </div>
+          <div class="locknote" id="lockNote">🔒 Your new payment is ready — enter your details to reveal it</div>
+
+          <div class="gate">
+            <div id="gateInner">
+              <h3>Reveal My <span class="grad">New Payment</span></h3>
+              <p class="gsub">See your exact numbers — a licensed advisor will call you to confirm your real qualified rate, usually within one business day.</p>
+              <div class="trust-row"><span>Soft check</span><span>No credit impact</span><span>No obligation</span></div>
+              <form id="leadForm" novalidate>
+                <div class="frow">
+                  <div class="fg"><label>First name*</label><input name="firstName" required></div>
+                  <div class="fg"><label>Last name*</label><input name="lastName" required></div>
+                </div>
+                <div class="fg"><label>Phone*</label><input type="tel" name="phone" required placeholder="(416) 555-0123"></div>
+                <div class="frow">
+                  <div class="fg"><label>Email*</label><input type="email" name="email" required></div>
+                  <div class="fg"><label>Province*</label>
+                    <select name="province" required>
+                      <option value="">Select…</option>
+                      <option>AB</option><option>BC</option><option>MB</option><option>NB</option><option>NL</option><option>NS</option><option>NT</option><option>NU</option><option selected>ON</option><option>PE</option><option>QC</option><option>SK</option><option>YT</option>
+                    </select>
+                  </div>
+                </div>
+                <label class="consent"><input type="checkbox" id="casl"><span>I agree to be contacted by Purple Dot Financial about consolidating my debt. Unsubscribe anytime.</span></label>
+                <button type="submit" class="btn btn-p glow" id="leadBtn">Reveal My New Payment →</button>
+                <p class="fnote">🔒 No spam. Enquiring won't affect your credit score.</p>
+              </form>
+            </div>
+            <div class="success" id="leadSuccess">
+              <div class="em">✅</div>
+              <h3 id="successH">You're All Set!</h3>
+              <p id="successP">A licensed advisor will call you shortly to confirm your exact qualified payment.</p>
+              <div style="display:flex;flex-direction:column;gap:10px;margin-top:18px">
+                <a href="https://calendly.com/purpledotfinancial/" target="_blank" rel="noopener noreferrer" class="btn btn-p" style="width:100%">📅 Book your call now →</a>
+                <a href="/debt-consolidation" class="btn btn-o" style="width:100%">See exactly how it works →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="text-align:center;max-width:780px;margin:20px auto 0">Estimates are illustrative only and assume the debt is refinanced at an estimated mortgage-secured rate over a 25-year amortization. Your actual rate, payment, and approval depend on your credit, income, property, and lender criteria. Consolidating debt over a longer amortization can increase total interest paid over time — a licensed advisor will walk you through the full picture. Not financial advice.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fmini">
+      <div class="logo">
+        <svg width="30" height="30" viewBox="0 0 160 160" fill="none">
+          <circle cx="80" cy="80" r="16" fill="#fff"/><circle cx="80" cy="80" r="36" stroke="#fff" stroke-width="8" fill="none"/><circle cx="80" cy="80" r="56" stroke="#fff" stroke-width="8" fill="none"/><circle cx="80" cy="80" r="74" stroke="#fff" stroke-width="8" fill="none"/>
+        </svg>
+        <span class="wm"><b>Purple Dot</b><span>Financial Inc.</span></span>
+      </div>
+      <div class="contacts"><a href="tel:6475248645">647-524-8645</a><span>·</span><a href="mailto:info@purpledotfinancial.com">info@purpledotfinancial.com</a></div>
+      <div class="flinks"><a href="/debt-consolidation">How it works</a><a href="/debt-consolidation/privacy.html">Privacy</a></div>
+    </div>
+    <div class="fine">
+      <strong>Important disclosures.</strong> This page is for general educational purposes only and does not constitute mortgage, financial, or legal advice, nor an offer or solicitation for any product. Debt consolidation through refinancing or a home-equity line of credit uses your home as security; failure to repay could put your home at risk. Consolidating unsecured debt into secured, mortgage-amortized borrowing lowers your interest rate and monthly payment but can increase the total interest paid over the life of the loan if balances are repaid over a longer period. Any figures, savings, rates, or calculator results shown are illustrative estimates only, are not guarantees, and will vary based on your credit, income, property value, existing debt, lender criteria, and how the strategy is implemented. All mortgage and credit products are subject to lender approval and eligibility. Purple Dot Financial operates as a mortgage agent team under Choice Financial Corp. (Independently Owned &amp; Operated) — Mortgage Agent Licence #M19002147; brokerage licences ON #13564 | QC #13564 | AB RECA | BCFSA #MB605782.
+      <div class="copy">© <span id="yr"></span> Purple Dot Financial Inc. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  const $=id=>document.getElementById(id);
+  const money=n=>'$'+Math.round(n).toLocaleString('en-CA');
+  const NEW_RATE=5.49, AMORT_YEARS=25;
+  function amortPayment(P,mr,m){if(m<=0)return P;if(mr===0)return P/m;return (P*mr)/(1-Math.pow(1+mr,-m));}
+
+  function compute(){
+    const D=+$('debt').value, rD=+$('rate').value, Pd=+$('pay').value, home=+$('home').value, mort=+$('mort').value;
+    $('lDebt').textContent=money(D);
+    $('lRate').textContent=rD.toFixed(2)+'%';
+    $('lPay').textContent=money(Pd);
+    $('lHome').textContent=money(home);
+    $('lMort').textContent=money(mort);
+    const Pdn=amortPayment(D, NEW_RATE/100/12, AMORT_YEARS*12);
+    const freed=Math.max(0, Pd-Pdn);
+    const intSaved=Math.max(0, D*(rD-NEW_RATE)/100);
+    const equityRoom=Math.max(0, home*0.8 - mort);
+    const fits=D<=equityRoom;
+    $('rFreed').textContent=money(freed);
+    $('rOld').textContent=money(Pd);
+    $('rNew').textContent=money(Pdn);
+    $('rInt').textContent=money(intSaved);
+    $('rDrop').textContent=Math.round(rD)+'% → '+NEW_RATE+'%';
+    const eq=$('rEquity');
+    if(fits){eq.className='equity-chip ok';eq.textContent='✓ You appear to have enough equity';}
+    else{eq.className='equity-chip warn';eq.textContent='⚠ May exceed 80% equity — an advisor can confirm options';}
+  }
+  ['debt','rate','pay','home','mort'].forEach(id=>$(id).addEventListener('input',compute));
+  compute();
+
+  // ---- Gated capture → redirect to the full page as the confirmation/nurture experience ----
+  const leadForm=$('leadForm'),leadBtn=$('leadBtn');
+  leadForm.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(!$('casl').checked){alert('Please check the consent box so we can call you with your new payment.');return;}
+    const data=Object.fromEntries(new FormData(leadForm).entries());
+    data.caslConsent=true;data.homeowner='Yes';
+    data.totalDebt=$('debt').value;data.debtRate=$('rate').value;data.debtPayment=$('pay').value;
+    data.homeValue=$('home').value;data.mortgageBalance=$('mort').value;
+    data.source='Debt Calculator (Meta)';data.pageUrl=location.href;
+    leadBtn.disabled=true;leadBtn.textContent='Revealing…';
+    try{
+      const res=await fetch('/api/submit-debt-lead',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+      const j=await res.json();
+      if(!res.ok||!j.success)throw new Error(j.error||'Something went wrong');
+      if(window.fbq)fbq('track','Lead',{content_category:'debt_consolidation'});
+      try{sessionStorage.setItem('debtLeadDone',JSON.stringify({firstName:data.firstName,phone:data.phone}));}catch(e){}
+      // Reveal the numbers in place and let them sit on it — no forced redirect.
+      $('lockedResult').classList.remove('locked');
+      $('lockNote').style.display='none';
+      $('gateInner').style.display='none';
+      $('successH').textContent="You're All Set, "+data.firstName+"!";
+      $('successP').innerHTML='These are your estimated numbers above 👆 A licensed advisor will call you'+(data.phone?' at <b style="color:#fff">'+data.phone+'</b>':'')+' shortly to confirm your exact qualified payment — usually within one business day.';
+      $('leadSuccess').style.display='block';
+      $('lockedResult').scrollIntoView({behavior:'smooth',block:'center'});
+    }catch(err){
+      alert('Sorry — '+err.message+'. Please try again or call us at 647-524-8645.');
+      leadBtn.disabled=false;leadBtn.textContent='Reveal My New Payment →';
+    }
+  });
+</script>
+</body>
+</html>
