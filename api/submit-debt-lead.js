@@ -143,6 +143,35 @@ async function notifyTelegram(lead) {
   } catch (err) { console.error('Telegram failed:', err.message); }
 }
 
+// Twilio SMS via REST API (no SDK dependency needed on Vercel).
+async function twilioSMS(to, body) {
+  const sid = process.env.TWILIO_ACCOUNT_SID, token = process.env.TWILIO_AUTH_TOKEN, from = process.env.TWILIO_FROM_NUMBER;
+  if (!sid || !token || !from || !to) return;
+  try {
+    const auth = Buffer.from(`${sid}:${token}`).toString('base64');
+    const params = new URLSearchParams({ To: to, From: from, Body: body });
+    const r = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${sid}/Messages.json`, {
+      method: 'POST',
+      headers: { Authorization: `Basic ${auth}`, 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: params.toString(),
+    });
+    if (!r.ok) console.error('Twilio SMS', to, r.status, (await r.text()).slice(0, 200));
+  } catch (err) { console.error('SMS failed:', err.message); }
+}
+
+// Confirmation text to the lead.
+async function sendLeadSMS(lead) {
+  await twilioSMS(lead.phone, `Hi ${lead.firstName}, it's ${BRAND}. We got your debt-consolidation estimate (~${money(lead.monthlyFreed)}/mo freed up). A licensed advisor will call you shortly to confirm your exact payment. Questions? 647-524-8645`);
+}
+
+// Instant "call now" text alert to you/your team.
+async function alertTeamSMS(lead) {
+  const to = process.env.TEAM_ALERT_PHONE;
+  if (!to) return;
+  const p = (lead.enrichment || {}).priority;
+  await twilioSMS(to, `📞 CALL NOW — debt lead${p ? ` [${p.toUpperCase()}]` : ''}: ${lead.firstName} ${lead.lastName} (${lead.province}) ${lead.phone}. ${money(lead.totalDebt)} @ ~${pct(lead.debtRate)}, frees ~${money(lead.monthlyFreed)}/mo, new pay ${money(lead.newPayment)}.`);
+}
+
 export default async (req, res) => {
   if (req.method !== 'POST') { res.status(405).json({ success: false, error: 'Method not allowed' }); return; }
   const b = typeof req.body === 'string' ? JSON.parse(req.body || '{}') : (req.body || {});
@@ -184,6 +213,8 @@ export default async (req, res) => {
     appendToGoogleSheet(lead),
     notifyUnderwriter(m, lead).catch((e) => console.error('Underwriter email:', e.message)),
     sendLeadEmail(m, lead).catch((e) => console.error('Lead email:', e.message)),
+    sendLeadSMS(lead),
+    alertTeamSMS(lead),
     notifyTelegram(lead),
   ]).catch(() => {});
 
